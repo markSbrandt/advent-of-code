@@ -1,17 +1,6 @@
-import math
+#https://adventofcode.com/2021/day/1
 
-# depths = [
-#     199,
-#     200,
-#     208,
-#     210,
-#     200,
-#     207,
-#     240,
-#     269,
-#     260,
-#     263
-# ]
+import math
 
 depths = []
 with open("01-input.txt") as f:
@@ -42,20 +31,6 @@ def countSlidingWindowIncreased(depths, windowLength):
                increased = increased + 1 
     
     return increased
-
-
-# depths = [
-#     199,
-#     200,
-#     208,
-#     210,
-#     200,
-#     207,
-#     240,
-#     269,
-#     260,
-#     263
-# ]
 
 depthIncreases = countSlidingWindowIncreased(depths, 3)
 print(f'{depthIncreases} increased depths in {len(depths)} readings')
