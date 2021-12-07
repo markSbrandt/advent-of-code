@@ -25,10 +25,13 @@ for num in range(len(nums_by_position)):
         nums_by_position[num] = "1"
         epsilon.append("0")
 
+#join binary parts to single "number"
 gamma = ''.join(nums_by_position)
 epsilon = ''.join(epsilon)
-        
+
+#convert base2 (binary) to base10 (decimal)
 gammaValue = int(gamma,2)
 epsilonValue = int(epsilon, 2)
 
+#part1 answer
 print(gammaValue * epsilonValue)
